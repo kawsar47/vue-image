@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   </head>
+   <body>
+      <div id = "app">
+         <h1>Firstname : {{firstname}}</h1>
+         <h1>Lastname : {{lastname}}</h1>
+         <div v-html = "htmlcontent"></div>
+         <img v-bind:src = "imgsrc" width = "300" height = "250" />
+      </div>
+      <script type="text/javascript">
+         var vm = new Vue({
+            el: '#app',
+            data: {
+               firstname : "Masud",
+               lastname  : "Alam",
+               htmlcontent : "<div><h1>Vue Js Template</h1></div>",
+               imgsrc : "http://w3programmers.com/bangla/wp-content/uploads/2018/12/redrose.jpg"
+   }
+})
+      </script>
+   </body>
+</html>
